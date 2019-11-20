@@ -19,12 +19,29 @@ export default class App extends React.Component {
           height: 150,
           padding: 20,
         }}>
-        <View style={{ backgroundColor: 'blue', flex: 5 }} />
-        <View style={{ backgroundColor: 'red', flex: 5 }} >
+        <View style={{ backgroundColor: 'blue', flex: 5 }} >
         <Button
   onPress={() => {
     alert ('Move forward, robot!');
     fetch('https://bot3.seattleacademy.software/drive?left=100&right=100')
+  }}
+  title="Press Me"
+/>
+
+        </View>
+        <View style={{ backgroundColor: 'red', flex: 5 }} >
+        
+<Button
+  onPress={() => {
+    alert ('Move forward, robot!');
+    fetch('https://bot3.seattleacademy.software/drive?left=50&right=50')
+  }}
+  title="Press Me"
+/>
+<Button
+  onPress={() => {
+    alert ('Move forward, robot!');
+    fetch('https://bot3.seattleacademy.software/drive?left=20&right=80')
   }}
   title="Press Me"
 />
